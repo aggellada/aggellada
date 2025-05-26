@@ -33,20 +33,24 @@ const ProjectItem = ({
       initial={{ y: 48, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.75 }}
-      className="px-12 gap-6 mb-9 flex flex-col-reverse md:flex-row items-center justify-between border-b border-zinc-800 md:px-3 pb-9 md:gap-12"
+      className="px-6 gap-6 mb-9 flex flex-col-reverse md:flex-row items-center justify-between border-b border-zinc-800 md:px-3 pb-9 md:gap-12"
     >
-      <div className="w-full md:w-1/3 flex flex-col gap-2">
-        <p className="mb-1.5 text-xl text-zinc-50">{title}</p>
+      <div className="w-full md:w-1/3 flex flex-col gap-2 lg:gap-4">
+        <p className="mb-1.5 text-4xl text-zinc-50 font-bold">{title}</p>
         <p className="text-sm uppercase text-zinc-500">{date}</p>
         <p className="text-zinc-300 text-sm">{description}</p>
         <div className="flex gap-4">
-          <a href={`${link}`} target="_blank" className="text-zinc-300 text-sm">
+          <a
+            href={`${link}`}
+            target="_blank"
+            className="hover:cursor-pointer px-4 py-2 bg-violet-900 text-zinc-300 text-sm"
+          >
             Link
           </a>
           <a
             href={`${github}`}
             target="_blank"
-            className="text-zinc-300 text-sm"
+            className="hover:cursor-pointer px-4 py-2 bg-violet-900 text-zinc-300 text-sm "
           >
             GitHub
           </a>
@@ -65,13 +69,12 @@ const ProjectItem = ({
             onMouseLeave={() => {
               if (!videoRef.current) return;
               videoRef.current?.pause();
-              videoRef.current.currentTime = 0; // Optional: restart when hover again
+              videoRef.current.currentTime = 0;
             }}
             muted
             loop
           >
             <source src={video} type="video/mp4" />
-            Your browser does not support the video tag.
           </video>
         </div>
         <div className="w-full flex gap-2">

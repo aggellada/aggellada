@@ -4,7 +4,7 @@ import ProjectItem from "./ProjectItem";
 const Project = () => {
   return (
     <section
-      className="w-full relative px-6 md:px-12 lg:px-40 py-32 text-white bg-[#020617]  "
+      className="w-full relative px-1 md:px-12 lg:px-40 py-20 text-white bg-[#020617]  "
       id="projects"
     >
       <motion.h1
@@ -18,7 +18,7 @@ const Project = () => {
       <ProjectItem
         title="Pictour "
         date="HTML | TailwindCSS | JavaScript | TypeScript | ReactJS | NextJS | Prisma | Leaflet | Cloudinary"
-        description="an interactive travel photography platform that allows users to explore, mark, and share visited locations via an intuitive Leaflet-based map interface."
+        description="An interactive travel photography platform that allows users to explore, mark, and share visited locations via an intuitive Leaflet-based map interface."
         main="https://res.cloudinary.com/dqrhjsi7y/image/upload/v1748199909/pictour-main_zyzhsn.png"
         sub1="https://res.cloudinary.com/dqrhjsi7y/image/upload/v1748199929/pictour-sub1_zqfthh.png"
         sub2="https://res.cloudinary.com/dqrhjsi7y/image/upload/v1748199929/pictour-sub2_srshvd.png"
@@ -29,7 +29,7 @@ const Project = () => {
       <ProjectItem
         title="Projectory"
         date="HTML | TailwindCSS | JavaScript | ReactJS | NextJS | Prisma"
-        description="a productivity-focused project management app enabling users to efficiently organize, prioritize, and track their projects and tasks with kanban board."
+        description="A productivity-focused project management app enabling users to efficiently organize, prioritize, and track their projects and tasks with kanban board."
         main="https://res.cloudinary.com/dqrhjsi7y/image/upload/v1748199940/projectory-main_f8lo3a.png"
         sub1="https://res.cloudinary.com/dqrhjsi7y/image/upload/v1748199940/projectory-sub1_jxi4at.png"
         sub2="https://res.cloudinary.com/dqrhjsi7y/image/upload/v1748199941/projectory-sub2_fowern.png"
@@ -40,7 +40,7 @@ const Project = () => {
       <ProjectItem
         title="Recipe Finder"
         date="HTML | TailwindCSS | JavaScript | TypeScript | ReactJS | NextJS"
-        description="a front-end web application for finding recipes. Used APIs to fetch recipe data, enabling users to filter their favorite meals and dishes."
+        description="A front-end web application for finding recipes. Used APIs to fetch recipe data, enabling users to filter their favorite meals and dishes."
         main="https://res.cloudinary.com/dqrhjsi7y/image/upload/v1748199965/recipe-finder-main_qncwps.png"
         sub1="https://res.cloudinary.com/dqrhjsi7y/image/upload/v1748199966/recipe-finder-sub2_foi8by.png"
         sub2="https://res.cloudinary.com/dqrhjsi7y/image/upload/v1748199966/recipe-finder-sub1_khpktr.png"
@@ -51,7 +51,7 @@ const Project = () => {
       <ProjectItem
         title="AppleTV Clone"
         date="HTML | TailwindCSS | JavaScript | ReactJS | Framer Motion"
-        description="A responsive and visually engaging clone of AppleTV’s interface, emphasizing smooth transitions and animated UI components "
+        description="A responsive and visually engaging clone of AppleTV’s interface, emphasizing smooth transitions and animated UI components."
         main="https://res.cloudinary.com/dqrhjsi7y/image/upload/v1748199888/appletv-clone-main_ckysye.png"
         sub1="https://res.cloudinary.com/dqrhjsi7y/image/upload/v1748199888/appletv-clone-sub1_fabogp.png"
         sub2="https://res.cloudinary.com/dqrhjsi7y/image/upload/v1748199887/appletv-clone-sub2_cnbf6g.png"

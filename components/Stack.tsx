@@ -36,7 +36,7 @@ function Stack() {
     >
       <div className="flex flex-col gap-8">
         <h1 className="text-3xl md:text-4xl font-bold">LANGUAGES</h1>
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-wrap">
           {STACKS.map((stack) => {
             return (
               <h1 key={stack} className="border-2 border-gray-700 p-2 md:p-6">
