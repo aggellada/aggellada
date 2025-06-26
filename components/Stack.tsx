@@ -13,7 +13,7 @@ const STACKS: string[] = [
   "Motion",
 ];
 const BACKEND: string[] = ["Express", "NodeJS"];
-const DATABSE: String[] = ["MongoDB", "Postgresql", "Prisma ORM"];
+const DATABSE: string[] = ["MongoDB", "Postgresql", "Prisma ORM"];
 const COLORS = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
 function Stack() {
