@@ -14,6 +14,7 @@ const STACKS: string[] = [
 ];
 const BACKEND: string[] = ["Express", "NodeJS"];
 const DATABSE: string[] = ["MongoDB", "Postgresql", "Prisma ORM"];
+const FULLSTACK: string[] = ["NextJS"];
 const COLORS = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
 function Stack() {
@@ -52,6 +53,18 @@ function Stack() {
         <h1 className="text-3xl md:text-4xl font-bold">BACKEND</h1>
         <div className="flex gap-4 flex-wrap">
           {BACKEND.map((item) => {
+            return (
+              <h1 key={item} className="border-2 border-gray-700 p-2 md:p-6">
+                {item}
+              </h1>
+            );
+          })}
+        </div>
+      </div>
+      <div className="flex flex-col gap-8">
+        <h1 className="text-3xl md:text-4xl font-bold">FULLSTACK</h1>
+        <div className="flex gap-4 flex-wrap">
+          {FULLSTACK.map((item) => {
             return (
               <h1 key={item} className="border-2 border-gray-700 p-2 md:p-6">
                 {item}
