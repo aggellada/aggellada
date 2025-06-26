@@ -3,10 +3,7 @@ import ProjectItem from "./ProjectItem";
 
 const Project = () => {
   return (
-    <section
-      className="w-full relative px-1 md:px-12 lg:px-40 py-20 text-white bg-[#020617]  "
-      id="projects"
-    >
+    <section className="w-full relative px-1 md:px-12 lg:px-40 py-20 text-white bg-[#020617]  " id="projects">
       <motion.h1
         initial={{ y: 48, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -15,6 +12,17 @@ const Project = () => {
       >
         Personal Projects
       </motion.h1>
+      <ProjectItem
+        title="Chatty "
+        date="HTML | TailwindCSS | JavaScript | ReactJS | NodeJS | Express | MongoDB "
+        description="A real-time chat application with user authentication, message persistence, and responsive UI using React, Express, Node.js, and MongoDB."
+        main="https://res.cloudinary.com/dqrhjsi7y/image/upload/v1750964584/2_ffel8l.png"
+        sub1="https://res.cloudinary.com/dqrhjsi7y/image/upload/v1750964585/3_ntltwh.png"
+        sub2="https://res.cloudinary.com/dqrhjsi7y/image/upload/v1750964470/1_ohcd4f.png"
+        video="https://res.cloudinary.com/dqrhjsi7y/video/upload/v1750964921/2025-06-27_03-07-27_ewthfd.mkv"
+        link="https://fullstack-chat-app-8wse.onrender.com/"
+        github="https://github.com/aggellada/fullstack-chat-app.git"
+      />
       <ProjectItem
         title="Pictour "
         date="HTML | TailwindCSS | JavaScript | TypeScript | ReactJS | NextJS | Prisma | Leaflet | Cloudinary"
