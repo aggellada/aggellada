@@ -2,16 +2,18 @@ import { animate } from "motion";
 import { useMotionTemplate, useMotionValue, motion } from "motion/react";
 import React, { useEffect } from "react";
 
-const STACKS: string[] = ["HTML5", "CSS3", "JavaScript", "Python"];
-const FRAMEWORKS_LIBRARIES: string[] = [
-  "React.js",
-  "Next.js",
-  "TypeScript",
+const STACKS: string[] = [
+  "HTML5",
+  "CSS3",
   "TailwindCSS",
+  "JavaScript",
+  "TypeScript",
+  "Python",
+  "ReactJS",
   "Motion",
 ];
-const DATABASES_BACKEND = ["Supabase", "Prisma"];
-
+const BACKEND: string[] = ["Express", "NodeJS"];
+const DATABSE: String[] = ["MongoDB", "Postgresql", "Prisma ORM"];
 const COLORS = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
 function Stack() {
@@ -35,7 +37,7 @@ function Stack() {
       style={{ backgroundImage }}
     >
       <div className="flex flex-col gap-8">
-        <h1 className="text-3xl md:text-4xl font-bold">LANGUAGES</h1>
+        <h1 className="text-3xl md:text-4xl font-bold">FRONTEND</h1>
         <div className="flex gap-4 flex-wrap">
           {STACKS.map((stack) => {
             return (
@@ -47,11 +49,9 @@ function Stack() {
         </div>
       </div>
       <div className="flex flex-col gap-8">
-        <h1 className="text-3xl md:text-4xl font-bold">
-          FRAMEWORKS & LIBRARIES
-        </h1>
+        <h1 className="text-3xl md:text-4xl font-bold">BACKEND</h1>
         <div className="flex gap-4 flex-wrap">
-          {FRAMEWORKS_LIBRARIES.map((item) => {
+          {BACKEND.map((item) => {
             return (
               <h1 key={item} className="border-2 border-gray-700 p-2 md:p-6">
                 {item}
@@ -63,7 +63,7 @@ function Stack() {
       <div className="flex flex-col gap-8">
         <h1 className="text-3xl md:text-4xl font-bold">DATABASE SERVICES</h1>
         <div className="flex gap-4 flex-wrap">
-          {DATABASES_BACKEND.map((item) => {
+          {DATABSE.map((item) => {
             return (
               <h1 key={item} className="border-2 border-gray-700 p-2 md:p-6">
                 {item}
